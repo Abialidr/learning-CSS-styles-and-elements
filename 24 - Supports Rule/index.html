@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>@supports rule</title>
+    <link rel="stylesheet" href="../_theme-styles/theme.css" />
+    <link rel="stylesheet" href="sandbox.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Bubblegum+Sans|Nova+Mono|Roboto+Condensed"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="sandbox">
+      <div class="content">
+        <section>
+          <h3>Do you see a circle? Your browser is good.</h3>
+          <p>
+            Don't see a circle? The @supports property knows that, and didn't
+            serve up that style for you.
+          </p>
+          <div class="circle">A circle.</div>
+        </section>
+        <section>
+          <p>
+            We CSS3 ninjas like to push the boundaries of web design, which
+            means we get to dance on the bleeding edge of supported code.
+            Unfortunately, everyday ordinary citizens and their old & outdated
+            browser software may not be as "fresh" as us.
+          </p>
+          <p>
+            Fear not, there's a CSS3 rule that recognizes the downfalls of the
+            everyday ordinary browsing citizen, and rectifies the problem,
+            leaving the user blissfully unaware of our epic-ness.
+          </p>
+          <h4>Enter the @supports rule</h4>
+          <p>
+            It's simple, really. Just use the @supports rule to to check a CSS
+            <code>property: value</code> pair, like so...
+          </p>
+          <pre>
+  <code>
+@supports (border-radius: 100px) {
+  .fresh {
+    border-radius: 100px;
+  }
+}
+  </code>
+</pre>
+          <p>
+            If the browser understands, it will generate the style within the
+            curly braces, otherwise, it'll move on... Like a chump.
+          </p>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+.circle {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 100px;
+}
+@supports (border-radius: 100px) {
+  .circle {
+    border-radius: 100px;
+  }
+}
